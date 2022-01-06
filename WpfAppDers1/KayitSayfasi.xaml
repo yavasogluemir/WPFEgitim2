@@ -1,0 +1,121 @@
+﻿<Window x:Class="WpfAppDers1.KayitSayfasi"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDers1"
+        mc:Ignorable="d"
+        Title="KayitSayfasi" Height="450" Width="380"
+        AllowsTransparency="True" Background="Transparent" WindowStyle="None"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Border BorderThickness="2" CornerRadius="20" Grid.RowSpan="2">
+            <Border.Background>
+                <LinearGradientBrush>
+                    <GradientStop Color="#423F3E" Offset="0"/>
+                    <GradientStop Color="#2B2B2B" Offset="1"/>
+                </LinearGradientBrush>
+            </Border.Background>
+
+        </Border>
+
+        <StackPanel VerticalAlignment="Center" Width="340">
+            <Image Source="Images/bg.png" Margin="0 25 0 0"/>
+            <TextBlock Text="Kayıt Sayfası"
+                       HorizontalAlignment="Center"
+                       Margin="0 25 0 0"
+                       FontFamily="Fonts/#Space Grotesk"
+                       Foreground="White"
+                       FontSize="20"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <StackPanel Orientation="Horizontal">
+                <TextBox Text="Kullanıcı Adı"
+                         FontFamily="Fonts/#Space Grotesk"
+                         FontWeight="Light"
+                         FontSize="20"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Opacity="0.5"
+                         Width="218"
+                         HorizontalAlignment="Left"
+                         Height="25"
+                         
+                         Margin="65 0 0 0"/>
+                <Image Source="Images/User2.png"
+                       Width="35"
+                       Height="35"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </StackPanel>
+            <Border Width="250"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+            <StackPanel Orientation="Horizontal">
+                <PasswordBox Password="Şifre"
+                         FontFamily="Fonts/#Space Grotesk"
+                         FontWeight="Light"
+                         FontSize="20"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Opacity="0.5"
+                         Width="218"
+                         HorizontalAlignment="Left"
+                         Height="25"
+                        
+                         Margin="65 20 0 0"/>
+                <Image Source="Images/password.png"
+                       Width="35"
+                       Height="35"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </StackPanel>
+            <Border Width="250"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+
+            <StackPanel Orientation="Horizontal">
+                <PasswordBox Password ="Şifre"
+                         FontFamily="Fonts/#Space Grotesk"
+                         FontWeight="Light"
+                         FontSize="20"
+                         Foreground="White"
+                         Background="Transparent"
+                         BorderThickness="0"
+                         Opacity="0.5"
+                         Width="218"
+                         HorizontalAlignment="Left"
+                         Height="25"
+                         
+                         Margin="65 20 0 0"/>
+                <Image Source="Images/password.png"
+                       Width="35"
+                       Height="35"
+                       VerticalAlignment="Center" HorizontalAlignment="Center"/>
+
+            </StackPanel>
+            <Border Width="250"
+                    Height="2"
+                    Background="White"
+                    Opacity="0.5"/>
+
+            <StackPanel>
+                <Button Content="Kayıt Ol" Width="150" Height="30" Margin="0 10 0 0"/>
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Window>
