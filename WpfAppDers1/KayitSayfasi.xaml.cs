@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
 namespace WpfAppDers1
+    
 {
     /// <summary>
     /// KayitSayfasi.xaml etkileşim mantığı
@@ -22,6 +23,12 @@ namespace WpfAppDers1
         public KayitSayfasi()
         {
             InitializeComponent();
+        }
+
+        private void Image_MouseEnter(object sender, MouseEventArgs e)
+        {
+            Application.Current.MainWindow.Show();
+            this.Close();
         }
     }
 }

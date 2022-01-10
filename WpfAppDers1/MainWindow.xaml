@@ -85,10 +85,10 @@
                     Opacity="0.5"/>
 
             <StackPanel Margin="0 35 0 0" Orientation="Horizontal">
-                <Button Width="100" Height="40"
+                <Button Style="{StaticResource Btn1}" Width="100" Height="40"
                     Content="Giriş"
                     Margin="63 0 51 0" Click="Button_Click"/>
-                <Button Width="100" Height="40"
+                <Button  Style="{StaticResource Btn1}" Width="100" Height="40"
                     Content="Kayıt" Click="Button_Click_1"/>
             </StackPanel>
             

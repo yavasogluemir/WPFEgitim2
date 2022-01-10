@@ -30,24 +30,24 @@ namespace WpfAppDers1
             DragMove();
         }
 
-        private void PackIcon_MouseDoubleClick(object sender, MouseButtonEventArgs e)
-        {
-
-        }
-
-        private void PackIcon_MouseDoubleClick_1(object sender, MouseButtonEventArgs e)
-        {
-            
-        }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.WindowState = WindowState.Maximized;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            
+            Application.Current.Shutdown();
+        }
+
+        private void RadioButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
         }
     }
 }
