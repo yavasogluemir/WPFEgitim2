@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using WpfAppDers1.ViewModel;
 
 namespace WpfAppDers1
 {
@@ -19,10 +20,10 @@ namespace WpfAppDers1
     /// </summary>
     public partial class GirisSayfasi : Window
     {
-        
         public GirisSayfasi()
         {
             InitializeComponent();
+            
         }
 
         private void Window_MouseDown(object sender, MouseButtonEventArgs e)

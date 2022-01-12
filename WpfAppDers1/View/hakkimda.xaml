@@ -7,32 +7,122 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <StackPanel>
-        <TextBlock Text="HAKKIMDA" Foreground="White" FontSize="20" FontWeight="Light" VerticalAlignment="Center"
-                   HorizontalAlignment="Left" Margin="0 0 0 20"/>
+        <TextBlock FontFamily="Bebas Neue" Text="Piton Ar-Ge ve Yazılım Evi'nde bu sene neler oldu ?" Foreground="White" FontSize="20" FontWeight="Light" VerticalAlignment="Center"
+                   HorizontalAlignment="Left" Margin="20 10 0 20"/>
         <StackPanel Orientation="Horizontal">
-            <Border Width="400" Height="200">
+            <Border Width="400" Height="200" Margin="15 0 0 0">
                 <Border.Background>
                     <LinearGradientBrush StartPoint="0 0" EndPoint="1 2">
                         <GradientStop Color="Orange" Offset="0"/>
-                        <GradientStop Color="DarkOrange" Offset="1"/>
+                        <GradientStop Color="OrangeRed" Offset="0.9"/>
                     </LinearGradientBrush>
                 </Border.Background>
                 <Border.Clip>
                     <RectangleGeometry RadiusX="10"
                                        RadiusY="10"
                                        Rect="0 0 400 200"/>
+                    
                 </Border.Clip>
                 <Grid>
                     <StackPanel>
                         <TextBlock Margin="20 10 10 0"
-                            Text="Merhaba,&#x0a;Hoş Geldin" FontSize="28" Foreground="White"/>
+                            Text="Merhaba,&#x0a;Hoş Geldin" FontSize="28" Foreground="White" FontFamily="Consolas"/>
                         <TextBlock Margin="20 10 10 0"
-                            Text="Evet, kim bu Emir ?" FontSize="20" Foreground="White"/>
+                            Text="Evet, Bu ay neler oldu ?" FontSize="20" FontFamily="/WpfAppDers1;component/Fonts/#Space Grotesk Light" Foreground="White"/>
 
                     </StackPanel>
-                    <Image Source="/Images/kadin.png" Margin="212,10,-18,-27"/>
+                    <Image Source="/Images/kadin.png" Margin="194,20,0,-37"/>
+                </Grid>
+
+                
+            </Border>
+
+            <Border Margin="15 0 0 0" Width="350" Height="200">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="RoyalBlue" Offset="0"/>
+                        <GradientStop Color="BlueViolet" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0 0 350 200"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Margin="20 10 10 0"
+                            Text="Büyük projelere,&#x0a;İmza attı." FontSize="28" Foreground="White" FontFamily="Consolas"/>
+                        <TextBlock Margin="20 10 10 0"
+                            Text=".......&#x0a;............" FontSize="28" Foreground="White" FontFamily="Consolas"/>
+
+                    </StackPanel>
+                    <Image Source="/Images/adam_1.png" Margin="131,0,-131.6,0"/>
                 </Grid>
             </Border>
+            
+            
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Border Margin="0 20 0 0" Width="200" Height="150">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#FF00ADEF" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0 0 200 150"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Margin="10 10 0 0" Text="ZABIS&#x0a;Projesi Hayata Geçti!" FontSize="18" Foreground="White" FontFamily="Bebas Neue"/>
+                        <TextBlock Text="..........&#x0a;........................&#x0a;......................................." Margin="10 20 0 0"/>
+                    </StackPanel>
+                    <Image Source="/Images/zabis.png" Margin="114,59,-10,10.4"/>
+                </Grid>
+            </Border>
+            <Border Margin="20 20 0 0" Width="200" Height="150">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#DDD31a25" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0 0 200 150"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Margin="10 10 0 0" Text="ATES&#x0a;Projesi Hayata Geçti!" FontSize="18" Foreground="White" FontFamily="Bebas Neue"/>
+                        <TextBlock Text="..........&#x0a;........................&#x0a;......................................." Margin="10 20 0 0"/>
+                    </StackPanel>
+                    <Image Source="/Images/ates.png" Margin="114,59,-10,10.4"/>
+                </Grid>
+            </Border>
+            <Border Margin="20 20 0 0" Width="200" Height="150">
+                <Border.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#FF559BBC" Offset="1"/>
+                    </LinearGradientBrush>
+                </Border.Background>
+                <Border.Clip>
+                    <RectangleGeometry RadiusX="10"
+                                       RadiusY="10"
+                                       Rect="0 0 200 150"/>
+                </Border.Clip>
+                <Grid>
+                    <StackPanel>
+                        <TextBlock Margin="10 10 0 0" Text="ZABIS&#x0a;Projesi Hayata Geçti!" FontSize="18" Foreground="White" FontFamily="Bebas Neue"/>
+                        <TextBlock Text="..........&#x0a;..................&#x0a;.............................." Margin="10 20 0 0"/>
+                    </StackPanel>
+                    <Image Source="/Images/sos.png" Margin="98,59,6,10.4"/>
+                </Grid>
+            </Border>
+            
+
         </StackPanel>
     </StackPanel>
 </UserControl>

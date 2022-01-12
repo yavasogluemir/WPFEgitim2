@@ -7,10 +7,8 @@ using System.Threading.Tasks;
 
 namespace WpfAppDers1.ViewModel
 {
-    class Hakkimdacontent : ObservableObject
+    public class Hakkimdacontent : ObservableObject
     {
-
-        public Hakkimdacontent hkmmdacnt { get; set; }
 
         private Object _currentView;
 
@@ -25,7 +23,6 @@ namespace WpfAppDers1.ViewModel
 
         public Hakkimdacontent()
         {
-            hkmmdacnt = new Hakkimdacontent();
            
         }
     }

@@ -7,8 +7,8 @@
         xmlns:ViewModel="clr-namespace:WpfAppDers1.ViewModel"
         xmlns:local="clr-namespace:WpfAppDers1"
         mc:Ignorable="d"
-        Title="GirisSayfasi" Height="400" Width="800"
-        WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen"
+        Title="GirisSayfasi" Height="500" Width="1050"
+        WindowStyle="None" ResizeMode="CanResizeWithGrip" WindowStartupLocation="CenterScreen"
         >
 
 
@@ -16,7 +16,7 @@
         <ViewModel:Hakkimdacontent/>
     </Window.DataContext>
     
-    <Grid Background="#FF525252">
+    <Grid Background="#2b2b2b">
         <Grid.RowDefinitions>
             <RowDefinition Height="35"/>
             <!--<RowDefinition Height="60" />-->
@@ -38,15 +38,15 @@
                 <Border Height="2" Background="White" Opacity="1" VerticalAlignment="Bottom" Margin="0,0,0,0"/>
 
                 <RadioButton  Content="Hakkımda" Foreground="White" Width="220" Height="50"
-                             VerticalAlignment="Center" HorizontalAlignment="Center" 
+                             VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"
                               Style="{StaticResource MenuButonTema}"/>
 
                 <RadioButton  Content="Piton Tarihçesi" Foreground="White" Width="220" Height="50"
-                             VerticalAlignment="Center" HorizontalAlignment="Center"
+                             VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"
                               Style="{StaticResource MenuButonTema}" Checked="RadioButton_Checked"/>
 
                 <RadioButton  Content="Piton Üyeleri" Foreground="White" Width="220" Height="50"
-                             VerticalAlignment="Center" HorizontalAlignment="Center"
+                             VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"
                               Style="{StaticResource MenuButonTema}"/>
 
                 
@@ -61,10 +61,12 @@
             </Border.Background>
         </Border>
         <Grid Grid.Row="0" Grid.ColumnSpan="2" Background="#FF323232" MouseDown="Window_MouseDown">
-            <TextBlock Text="Ana Menü" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Foreground="White" FontFamily="Fonts/#Space Grotesk" Margin="75 0 0 0"/>
+            <TextBlock Text="Ana Menü" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Foreground="White" 
+                       FontFamily="Fonts/#Space Grotesk" Margin="75 0 0 0"/>
             <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Right" Margin="0 0 5 0">
 
-                <Button Content="―" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold" Height="25" Width="25" BorderThickness="0" Background="Transparent" Click="Button_Click_2">
+                <Button Content="―" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontWeight="Bold"
+                        Height="25" Width="25" BorderThickness="0" Background="Transparent" Click="Button_Click_2">
                     
                 </Button>
 
@@ -73,7 +75,8 @@
                 </Button>
 
                 <Button BorderThickness="0" Background="Transparent" Click="Button_Click_1">
-                    <materialDesign:PackIcon Kind="Close" Width="25" Height="25" Background="Transparent" Foreground="Red" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <materialDesign:PackIcon Kind="Close" Width="25" Height="25" Background="Transparent" Foreground="Red"
+                                             VerticalAlignment="Center" HorizontalAlignment="Center"/>
                 </Button>
 
 
